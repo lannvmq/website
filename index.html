@@ -1,17 +1,84 @@
-<!DOCTYPE html>
-<html>
+<html lang="pl">
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Zespół Szkół nr 10 w Warszawie</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Technikum Nr 10 im. Stanisława</title>
+<link rel="stylesheet" href="./style.css">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div>
 
-    </div>
+<header class="header">
+<div class="logo">Technikum Nr 10</div>
 
-    <script src='main.js'></script>
-</body>
+<nav class="nav">
+<a href="#about">O nas</a>
+<a href="#directions">Kierunki</a>
+<a href="#news">Aktualności</a>
+<a href="#contact">Kontakt</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Technikum Nr 10 im. Stanisława</h1>
+<p>Talent jest jak kawałek szlachetnego, ale surowego metalu: dopiero pilna praca go obrobi i wartość mu wielką nada.<br>
+<b>Stanisław Staszic</b></p>
+<button class="btn" onclick="scrollToSection('about')">Dowiedz się więcej</button>
+</section>
+
+<section id="about" class="section about">
+<h2>O nas</h2>
+<p>Technikum Nr 10 to szkoła z tradycją, w której kładziemy nacisk na rozwój zawodowy i osobisty naszych uczniów. Naszym celem jest tworzenie przestrzeni sprzyjającej nauce, kreatywności i wzajemnemu szacunkowi.</p>
+</section>
+
+<section id="directions" class="section directions">
+<h2>Kierunki kształcenia</h2>
+<div class="cards">
+<div class="card">
+<h3>Technik Informatyk</h3>
+<p>Programowanie, sieci komputerowe, tworzenie stron internetowych.</p>
+</div>
+<div class="card">
+<h3>Technik Programista</h3>
+<p>Układy elektroniczne, pomiary, nowoczesne technologie.</p>
+</div>
+<div class="card">
+<h3>Technik Spedytor</h3>
+<p>Grafika komputerowa, projektowanie, marketing.</p>
+</div>
+
+<div class="card">
+<h3>Technik Organizacji Tyrystyki</h3>
+<p>Grafika komputerowa, projektowanie, marketing.</p>
+</div>
+
+</div>
+</section>
+
+<section id="news" class="section news">
+<h2>Aktualności</h2>
+<div class="cards">
+<div class="card">
+<h4>Rozpoczęcie roku szkolnego</h4>
+<p>Uroczyste rozpoczęcie odbędzie się 2 września o godzinie 9:00.</p>
+</div>
+<div class="card">
+<h4>Dzień Otwarty</h4>
+<p>20.03.2024 w Zespole Szkół nr 10 w Warszawie, odbył się dzień otwarty. 
+    <br>W czasie spotkania uczestnicy mogli zapoznać się z ofertą edukacyjną oraz porozmawiać z uczniami i nauczycielami, którzy na co dzień uczestniczą w życiu naszej szkoły.</p>
+</div>
+</div>
+</section>
+
+<section id="contact" class="section contact">
+<h2>Kontakt</h2>
+<p>Email: <a href="mailto:sekretariat@zs10.pl">sekretariat@zs10.pl</a></p>
+<p>Telefon: 123 456 789</p>
+</section>
+
+<footer class="footer">
+<p>© 2025 Technikum Nr 10 im. Stanisława. Wszelkie prawa zastrzeżone.</p>
+</footer>
 </html>
