@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kierunki — Technikum Nr 10</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">Technikum Nr 10</div>
+      <nav class="main-nav" aria-label="Główne menu">
+        <a href="index.html">Strona główna</a>
+        <a href="about.html">O nas</a>
+        <a class="active" href="directions.html">Kierunki</a>
+        <a href="news.html">Aktualności</a>
+        <a href="contact.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section directions-bg">
+    <div class="container">
+      <h1>Kierunki kształcenia</h1>
+
+      <!-- Карточки с описанием направлений -->
+      <div class="cards">
+        <article class="card">
+          <h3>Technik Informatyk</h3>
+          <p>Programowanie, sieci komputerowe, tworzenie stron.</p>
+        </article>
+
+        <article class="card">
+          <h3>Technik Programista</h3>
+          <p>Systemy embedded, aplikacje, praktyka projektowa.</p>
+        </article>
+
+        <article class="card">
+          <h3>Technik Spedytor</h3>
+          <p>Logistyka, transport, dokumentacja przewozowa.</p>
+        </article>
+
+        <article class="card">
+          <h3>Technik Organizacji Turystyki</h3>
+          <p>Obsługa turystyki, organizacja wydarzeń, obsługa klienta.</p>
+        </article>
+      </div>
+
+      <!-- Блок с предложением пройти тест -->
+      <div class="test-section">
+        <p class="test-intro">
+          Chcesz dowiedzieć się, który kierunek najlepiej Ci odpowiada? 
+          Przejdź test dla każdego z nich!
+        </p>
+
+        <div class="test-buttons-column">
+          <button class="btn test-btn" data-direction="informatyk">Test Informatyk</button>
+          <button class="btn test-btn" data-direction="programista">Test Programista</button>
+          <button class="btn test-btn" data-direction="spedytor">Test Spedytor</button>
+          <button class="btn test-btn" data-direction="turystyka">Test Turystyka</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Модальное окно для тестов -->
+  <div id="test-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modal-title">Test kierunku</h2>
+      <div id="modal-questions"></div>
+      <button id="submit-test" class="btn">Sprawdź wynik</button>
+      <div id="modal-result" style="margin-top:20px; font-weight:bold;"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2025 Technikum Nr 10 im. Stanisława — Wszystkie prawa zastrzeżone</small>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
